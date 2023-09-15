@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Taller Final</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdi@6.0.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/vertical-layout-light/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/CRUD_Clientes.styles.css" asp-append-version="true" />
+
+</head>
+
+<body>
+    <div class="container-scroller">
+
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+                <div class="me-3">
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+                        <span class="icon-menu"></span>
+                    </button>
+                </div>
+                <div>
+                    <a class="navbar-brand brand-logo" href="#">
+                        <h4>Cuatro soles</h4>
+                        <!-- <img src="../../images/logo.svg" alt="logo" /> -->
+                    </a>
+                    <a class="navbar-brand brand-logo" href="#">
+                        @*<img src="~/images/whatsapp image 2023-09-02 at 7.36.34 pm.jpeg" />*@
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-top">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+                        <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="img-xs rounded-circle" src="~/images/whatsapp image 2023-09-02 at 7.36.34 pm.jpeg" alt="Profile image">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                            <div class="dropdown-header text-center">
+                                <img class="img-md rounded-circle" src="#" alt="Profile image">
+                                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+                            </div>
+                            <a class="dropdown-item">
+                                <i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Mi
+                                Perfil<span class="badge badge-pill badge-danger">1</span>
+                            </a>
+                            <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Salir</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                        data-bs-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid page-body-wrapper">
+
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" aria-expanded="false"
+                           aria-controls="dashboard">
+                            <i class="menu-icon mdi mdi-chart-bar"></i>
+                            <span class="menu-arrow">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Usuarios" asp-action="Index" aria-expanded="false" aria-controls="usuarios">
+                            <i class="menu-icon mdi mdi-account-tie"></i>
+                            <span class="menu-arrow">Usuarios</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false" href="#compras" aria-controls="compras">
+                            <i class="menu-icon mdi mdi-cart"></i>
+                            <span class="menu-title">Compras</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="compras">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" asp-controller="Proveedores" asp-action="Index">Proveedores</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Insumos</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-controller="Compras" asp-action="Index">Compras</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Abonos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#produccion" aria-expanded="false"
+                           aria-controls="produccion">
+                            <i class="menu-icon mdi mdi-chart-line"></i>
+                            <span class="menu-title">Producción</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="produccion">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" asp-controller="Empleadoes" asp-action="Index">Empleados</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Producción</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Rendimiento</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Jornada Laboral</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Reg. Producción</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#ventas" aria-expanded="false" aria-controls="ventas">
+                            <i class="menu-icon mdi mdi-cash-register"></i>
+                            <span class="menu-title">Ventas</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ventas">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Pedidos</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-controller="Ventas" asp-action="Index">Ventas</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Abonos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+
+                        <div class="container">
+                            <main role="main" class="pb-3">
+                                @RenderBody()
+                            </main>
+                        </div>
+
+                        <footer class="border-top footer text-muted">
+                            <div class="container">
+                                &copy; 2023 - CRUD_Clientes - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

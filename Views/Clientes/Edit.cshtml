@@ -1,0 +1,118 @@
+﻿@model taller_final_cruds.Models.Cliente
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>Editar Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdCliente" />
+
+            <div class="">
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="TipoCliente" class="control-label">Tipo de Cliente</label><br>
+                        <select asp-for="TipoCliente" class="form-select form-control ">
+                            <option value="Empresa">Empresa</option>
+                            <option value="Persona">Persona natural</option>
+                        </select>
+                        <span asp-validation-for="TipoCliente" class="text-danger"></span><br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="TipoIdentificacion">Tipo de Documento</label><br>
+                        <select asp-for="TipoIdentificacion" class="form-select form-control ">
+                            <option value="NIT">NIT</option>
+                            <option value="Cedula de ciudadania">Cedula Ciudadania</option>
+                            <option value="Cedula de extranjero">Cedula Extranjera</option>
+                            <option value="Tarjeta de extranjero">Tarjeta Extranjera</option>
+                            <option value="Tarjeta de identidad">Tarjeta de Identidad</option>
+                        </select>
+                        <span asp-validation-for="TipoIdentificacion" class="text-danger"></span><br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="NumeroIdentificacion">Numero de Identificación</label><br>
+                        <input type="number" class="form-control col-sm-12" asp-for="NumeroIdentificacion"
+                               placeholder="0000000000">
+                        <span asp-validation-for="NumeroIdentificacion" class="text-danger"></span><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="RazonSocial">Razon Social</label><br>
+                        <input type="text" class="form-control col-sm-12" asp-for="RazonSocial"
+                               placeholder="Ejm: Los Oscaritos S.A.S">
+                        <span asp-validation-for="RazonSocial" class="text-danger"></span><br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="NombreComercial">Nombre Comercial</label><br>
+                        <input type="text" class="form-control col-sm-12" asp-for="NombreComercial"
+                               placeholder="Ejm: Oscarito">
+                        <span asp-validation-for="NombreComercial" class="text-danger"></span><br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Ciudad">Ciudad</label><br>
+                        <input type="text" class="form-control col-sm-12" asp-for="Ciudad"
+                               placeholder="Medellín, Bogota, Cali">
+                        <span asp-validation-for="Ciudad" class="text-danger"></span><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="Direccion">Dirrección</label><br>
+                        <input type="text" class="form-control col-sm-12" asp-for="Direccion"
+                               placeholder="Av 00 CL 00 00">
+                        <span asp-validation-for="Direccion" class="text-danger"></span><br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Email">Correo Electrónico</label><br>
+                        <input type="text" class="form-control col-sm-12" asp-for="Email"
+                               placeholder="Ejm: oscarito@gmail.com">
+                        <span asp-validation-for="Email" class="text-danger"></span><br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Telefono">Télefono</label><br>
+                        <input type="text" class="form-control col-sm-12" asp-for="Telefono" placeholder="0000000000">
+                        <span asp-validation-for="Telefono" class="text-danger"></span><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="Contacto">Contacto</label><br>
+                        <input type="text" class="form-control col-sm-12" asp-for="Contacto"
+                               placeholder="Ejm: Juanito Contalo">
+                        <span asp-validation-for="Contacto" class="text-danger"></span><br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="">Estado</label><br>
+                        <select id="estado1" class="form-select form-control col-sm-12 ">
+                            <option value="Activo">Activo</option>
+                            <option value="Inactivo">Inactivo</option>
+                        </select>
+                        <div id="errorEstado1"></div><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="form-group col-sm-4">
+                    <input type="submit" value="Guardar" class="btn btn-success" style="background-color:seagreen" />
+                </div>
+
+                <div class="col-sm-4">
+                    <a class="btn btn-warning" asp-action="Index" style="background-color:indianred">Regresar </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
