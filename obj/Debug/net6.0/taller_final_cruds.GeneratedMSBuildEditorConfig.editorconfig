@@ -9,157 +9,157 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = taller_final_cruds
 build_property.RootNamespace = taller_final_cruds
-build_property.ProjectDir = C:\Users\Usuario\Documents\Desarrollo .NET\taller_final_cruds\
+build_property.ProjectDir = C:\Users\mapin\Downloads\taller_final_.net\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Usuario\Documents\Desarrollo .NET\taller_final_cruds
+build_property.MSBuildProjectDirectory = C:\Users\mapin\Downloads\taller_final_.net
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Clientes/Create.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Clientes/Delete.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Clientes/Details.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Clientes/Edit.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Clientes/Index.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Compras/Create.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Compras/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Compras/Delete.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Compras/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Compras/Details.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Compras/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Compras/Edit.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Compras/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Compras/Index.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Compras/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Empleadoes/Create.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Empleadoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Empleadoes/Delete.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Empleadoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Empleadoes/Details.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Empleadoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Empleadoes/Edit.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Empleadoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Empleadoes/Index.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Empleadoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Home/Index.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Home/Privacy.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Proveedores/Create.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Proveedores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Proveedores/Delete.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Proveedores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Proveedores/Details.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Proveedores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Proveedores/Edit.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Proveedores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Proveedores/Index.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Proveedores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Shared/Error.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Usuarios/Create.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Usuarios/Delete.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Usuarios/Details.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Usuarios/Edit.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Usuarios/Index.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Ventas/Create.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Ventas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Ventas/Delete.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Ventas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Ventas/Details.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Ventas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Ventas/Edit.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Ventas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Ventas/Index.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Ventas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/_ViewImports.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/_ViewStart.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo .NET/taller_final_cruds/Views/Shared/_Layout.cshtml]
+[C:/Users/mapin/Downloads/taller_final_.net/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e8v4wifbeg

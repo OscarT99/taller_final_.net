@@ -10,11 +10,10 @@
             <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <form asp-controller="Clientes" asp-action="Index">
-                            <p>
-                                Buscar: <input  type="text" name="buscar" class="form-group" />
-                                @*<input type="submit" value="buscar" class="btn btn-sm btn-dark" />*@
-                            </p>
+                       
+                        <form class="d-flex" asp-controller="Clientes" asp-action="Index">
+                            <input class="form-control me-2" type="text" placeholder="Buscar" name="buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
                     </li>
                 </ul>

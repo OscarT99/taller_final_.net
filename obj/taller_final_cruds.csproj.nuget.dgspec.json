@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\Desarrollo .NET\\taller_final_cruds\\taller_final_cruds.csproj": {}
+    "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\Desarrollo .NET\\taller_final_cruds\\taller_final_cruds.csproj": {
+    "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Desarrollo .NET\\taller_final_cruds\\taller_final_cruds.csproj",
+        "projectUniqueName": "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj",
         "projectName": "taller_final_cruds",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\Desarrollo .NET\\taller_final_cruds\\taller_final_cruds.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\Desarrollo .NET\\taller_final_cruds\\obj\\",
+        "projectPath": "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj",
+        "packagesPath": "C:\\Users\\mapin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mapin\\Downloads\\taller_final_.net\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mapin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,6 +58,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.2, )"
             }
           },
           "imports": [

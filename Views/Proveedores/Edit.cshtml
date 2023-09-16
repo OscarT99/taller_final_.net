@@ -4,80 +4,94 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1 class="pb-2 mb-0 text-center">Editar</h1>
 
-<h4>Proveedore</h4>
+<h4 class="pb-2 mb-0 text-center">Proveedor</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row justify-content-center">
+    <div class="col-md-5">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdProveedor" />
-            <div class="form-group">
-                <label asp-for="TipoProveedor" class="control-label"></label>
-                <input asp-for="TipoProveedor" class="form-control" />
+
+            <div class="form-group pt-2">
+                <label class="control-label">Tipo de proveedor</label>
+                <select asp-for="TipoProveedor" class="form-select form-control">
+                    <option asp-for="TipoProveedor" selected="true" disabled="disabled"></option>
+                    <option value="Persona">Personal natural</option>
+                    <option value="Empresa">Empresa</option>
+                </select>
                 <span asp-validation-for="TipoProveedor" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TipoIdentificacion" class="control-label"></label>
-                <input asp-for="TipoIdentificacion" class="form-control" />
+
+            <div class="form-group pt-2">
+                <label class="control-label">Tipo de identidad</label>
+                <select asp-for="TipoIdentificacion" class="form-select form-control">
+                    <option asp-for="TipoIdentificacion" selected="true" disabled="disabled"></option>
+                    <option value="NIT">NIT</option>
+                    <option value="Cedula de ciudadania">Cédula Ciudadania</option>
+                    <option value="Cedula de extranjero">Cédula Extranjera</option>
+                    <option value="Tarjeta de extranjero">Tarjeta Extranjera</option>
+                    <option value="Tarjeta de identidad">Tarjeta de Identidad</option>
+                </select>
                 <span asp-validation-for="TipoIdentificacion" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="NumeroIdentificacion" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Nro. de identidad</label>
                 <input asp-for="NumeroIdentificacion" class="form-control" />
                 <span asp-validation-for="NumeroIdentificacion" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="RazonSocial" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Razón social</label>
                 <input asp-for="RazonSocial" class="form-control" />
                 <span asp-validation-for="RazonSocial" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="NombreComercial" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Nombre comercial</label>
                 <input asp-for="NombreComercial" class="form-control" />
                 <span asp-validation-for="NombreComercial" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Ciudad" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Ciudad</label>
                 <input asp-for="Ciudad" class="form-control" />
                 <span asp-validation-for="Ciudad" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Direccion" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Dirección</label>
                 <input asp-for="Direccion" class="form-control" />
                 <span asp-validation-for="Direccion" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Contacto" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Contacto</label>
                 <input asp-for="Contacto" class="form-control" />
                 <span asp-validation-for="Contacto" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Telefono" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Télefono</label>
                 <input asp-for="Telefono" class="form-control" />
                 <span asp-validation-for="Telefono" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Correo</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Estado" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label class="control-label">Estado</label>
                 <input asp-for="Estado" class="form-control" />
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="d-flex text-muted pt-2">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
+        <small class="d-block text-end mt-3">
+            <a asp-action="Index">Volver</a>
+        </small>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

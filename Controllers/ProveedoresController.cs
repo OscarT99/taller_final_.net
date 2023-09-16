@@ -19,11 +19,16 @@ namespace taller_final_cruds.Controllers
         }
 
         // GET: Proveedores
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String buscar)
         {
-              return _context.Proveedores != null ? 
-                          View(await _context.Proveedores.ToListAsync()) :
-                          Problem("Entity set 'CrudCountechNetContext.Proveedores'  is null.");
+            var proveedores = from Proveedore in _context.Proveedores select Proveedore;
+
+            if (!String.IsNullOrEmpty(buscar))
+            {
+                proveedores = proveedores.Where(s => s.NumeroIdentificacion!.Contains(buscar));
+            }
+
+            return View(await proveedores.ToListAsync());
         }
 
         // GET: Proveedores/Details/5

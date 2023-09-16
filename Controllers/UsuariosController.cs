@@ -19,11 +19,16 @@ namespace taller_final_cruds.Controllers
         }
 
         // GET: Usuarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String buscar)
         {
-              return _context.Usuarios != null ? 
-                          View(await _context.Usuarios.ToListAsync()) :
-                          Problem("Entity set 'CrudCountechNetContext.Usuarios'  is null.");
+            var usuarios = from Usuario in _context.Usuarios select Usuario;
+
+            if (!String.IsNullOrEmpty(buscar))
+            {
+                usuarios = usuarios.Where(s => s.Nombre!.Contains(buscar));
+            }
+
+            return View(await usuarios.ToListAsync());
         }
 
         // GET: Usuarios/Details/5

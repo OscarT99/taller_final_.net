@@ -19,11 +19,16 @@ namespace taller_final_cruds.Controllers
         }
 
         // GET: Empleadoes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String buscar)
         {
-              return _context.Empleados != null ? 
-                          View(await _context.Empleados.ToListAsync()) :
-                          Problem("Entity set 'CrudCountechNetContext.Empleados'  is null.");
+            var empleados = from Empleado in _context.Empleados select Empleado;
+
+            if (!String.IsNullOrEmpty(buscar))
+            {
+                empleados = empleados.Where(s => s.Nombres!.Contains(buscar));
+            }
+
+            return View(await empleados.ToListAsync());
         }
 
         // GET: Empleadoes/Details/5
