@@ -4,63 +4,71 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<div class="container text-center mt-5">
+    <h1 class="pb-2 mb-0">Crear</h1>
 
-<h4>Compra</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Proveedor" class="control-label"></label>
-                <input asp-for="Proveedor" class="form-control" />
-                <span asp-validation-for="Proveedor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Contacto" class="control-label"></label>
-                <input asp-for="Contacto" class="form-control" />
-                <span asp-validation-for="Contacto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumeroFactura" class="control-label"></label>
-                <input asp-for="NumeroFactura" class="form-control" />
-                <span asp-validation-for="NumeroFactura" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaDeCompra" class="control-label"></label>
-                <input asp-for="FechaDeCompra" class="form-control" />
-                <span asp-validation-for="FechaDeCompra" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Subtotal" class="control-label"></label>
-                <input asp-for="Subtotal" class="form-control" />
-                <span asp-validation-for="Subtotal" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Iva" class="control-label"></label>
-                <input asp-for="Iva" class="form-control" />
-                <span asp-validation-for="Iva" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FormaDePago" class="control-label"></label>
-                <input asp-for="FormaDePago" class="form-control" />
-                <span asp-validation-for="FormaDePago" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Observaciones" class="control-label"></label>
-                <input asp-for="Observaciones" class="form-control" />
-                <span asp-validation-for="Observaciones" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    <h4 class="pb-2 mb-4">Compra</h4>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-6 mx-auto">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Proveedor</label>
+                    <input asp-for="Proveedor" class="form-control" />
+                    <span asp-validation-for="Proveedor" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Contacto" class="control-label"></label>
+                    <input asp-for="Contacto" class="form-control" />
+                    <span asp-validation-for="Contacto" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NumeroFactura" class="control-label"></label>
+                    <input asp-for="NumeroFactura" class="form-control" />
+                    <span asp-validation-for="NumeroFactura" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FechaDeCompra" class="control-label"></label>
+                    <input asp-for="FechaDeCompra" class="form-control" />
+                    <span asp-validation-for="FechaDeCompra" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Subtotal" class="control-label"></label>
+                    <input asp-for="Subtotal" class="form-control" />
+                    <span asp-validation-for="Subtotal" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Iva" class="control-label"></label>
+                    <input asp-for="Iva" class="form-control" />
+                    <span asp-validation-for="Iva" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FormaDePago" class="control-label">Forma de Pago</label>
+                    <select asp-for="FormaDePago" class="form-control">
+                        <option value="Contado">Contado</option>
+                        <option value="Crédito">Crédito</option>
+                    </select>
+                    <span asp-validation-for="FormaDePago" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Observaciones" class="control-label"></label>
+                    <input asp-for="Observaciones" class="form-control" />
+                    <span asp-validation-for="Observaciones" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group pt-2">
+                    <input type="submit" value="Crear" class="btn btn-success" />
+                </div>
+
+            </form>
+            <small class="d-block text-end mt-3">
+                <a asp-action="Index">Volver</a>
+            </small>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
