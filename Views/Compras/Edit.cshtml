@@ -1,4 +1,4 @@
-﻿@model taller_final_cruds.Models.Compra
+@model taller_final_cruds.Models.Compra
 
 @{
     ViewData["Title"] = "Edit";
@@ -13,59 +13,63 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdCompra" />
-            <div class="form-group">
-                <label asp-for="Proveedor" class="control-label"></label>
-                <input asp-for="Proveedor" class="form-control" />
-                <span asp-validation-for="Proveedor" class="text-danger"></span>
+            <div class="col-md-4">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="IdCompra" />
+
+                    <div class="form-group">
+                        <label asp-for="Proveedor" class="control-label">Proveedor</label>
+                        <input asp-for="Proveedor" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Contacto" class="control-label">Contacto</label>
+                        <input asp-for="Contacto" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NumeroFactura" class="control-label">Número de Factura</label>
+                        <input asp-for="NumeroFactura" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FechaDeCompra" class="control-label">Fecha de Compra</label>
+                        <input asp-for="FechaDeCompra" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FechaRegistro" class="control-label">Fecha de Registro</label>
+                        <input asp-for="FechaRegistro" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Subtotal" class="control-label">Subtotal</label>
+                        <input asp-for="Subtotal" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Iva" class="control-label">IVA</label>
+                        <input asp-for="Iva" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FormaDePago" class="control-label">Forma de Pago</label>
+                        <input asp-for="FormaDePago" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Observaciones" class="control-label">Observaciones</label>
+                        <input asp-for="Observaciones" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Estado</label>
+                        <select class="form-control" name="Estado">
+                            <option selected disabled>Seleccionar el estado</option>
+                            <option value="true">Activo</option>
+                            <option value="false">Inactivo</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn btn-primary" />
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="Contacto" class="control-label"></label>
-                <input asp-for="Contacto" class="form-control" />
-                <span asp-validation-for="Contacto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumeroFactura" class="control-label"></label>
-                <input asp-for="NumeroFactura" class="form-control" />
-                <span asp-validation-for="NumeroFactura" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaDeCompra" class="control-label"></label>
-                <input asp-for="FechaDeCompra" class="form-control" />
-                <span asp-validation-for="FechaDeCompra" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaRegistro" class="control-label"></label>
-                <input asp-for="FechaRegistro" class="form-control" />
-                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Subtotal" class="control-label"></label>
-                <input asp-for="Subtotal" class="form-control" />
-                <span asp-validation-for="Subtotal" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Iva" class="control-label"></label>
-                <input asp-for="Iva" class="form-control" />
-                <span asp-validation-for="Iva" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FormaDePago" class="control-label"></label>
-                <input asp-for="FormaDePago" class="form-control" />
-                <span asp-validation-for="FormaDePago" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Observaciones" class="control-label"></label>
-                <input asp-for="Observaciones" class="form-control" />
-                <span asp-validation-for="Observaciones" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" />
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
+
         </form>
     </div>
 </div>
