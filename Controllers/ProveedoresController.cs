@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using taller_final_cruds.Models;
+using X.PagedList;
 
 namespace taller_final_cruds.Controllers
 {
@@ -19,7 +20,7 @@ namespace taller_final_cruds.Controllers
         }
 
         // GET: Proveedores
-        public async Task<IActionResult> Index(String buscar)
+        public async Task<IActionResult> Index(String buscar, string filtrar, int? page)
         {
             var proveedores = from Proveedore in _context.Proveedores select Proveedore;
 
@@ -28,7 +29,31 @@ namespace taller_final_cruds.Controllers
                 proveedores = proveedores.Where(s => s.NumeroIdentificacion!.Contains(buscar));
             }
 
-            return View(await proveedores.ToListAsync());
+            ViewData["FiltroNombre"] = filtrar == "NombreAscendente" ? "NombreDescendente" : "NombreAscendente";
+            switch (filtrar)
+            {
+
+                case "NombreDescendente":
+                    proveedores = proveedores.OrderByDescending(proveedores => proveedores.NombreComercial);
+                    break;
+                case "NombreAscendente":
+                    proveedores = proveedores.OrderBy(proveedores => proveedores.NombreComercial);
+                    break;
+                default:
+                    proveedores = proveedores.OrderByDescending(proveedores => proveedores.NombreComercial);
+                    break;
+            }
+
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+
+            var pageProveedores = await proveedores.ToPagedListAsync(pageNumber, pageSize);
+
+            ViewData["Buscar"] = buscar;
+            ViewData["Page"] = pageNumber;
+
+
+            return View(pageProveedores);
         }
 
         // GET: Proveedores/Details/5
