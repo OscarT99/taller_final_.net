@@ -82,16 +82,19 @@
         </dd>
     </dl>
 
+            <div class="row justify-content-center">
+               
+                <div class="form-group col-sm-4">
 
-    <div>
-        <small class="d-block text-end mt-3">
-            <a asp-action="Edit" asp-route-id="@Model?.IdProveedor">Editar</a>
-        </small>
-            <small class="d-block text-end  mt-3">
-            <a asp-action="Index">Volver</a>
-        </small>
+                    <a asp-action="Edit" asp-route-id="@Model?.IdProveedor" class="btn btn-warning">Editar</a>
 
-    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <a class="btn btn-primary" asp-action="Index">Regresar </a>
+                </div>
+
+            </div>
 </div>
 
 </div>

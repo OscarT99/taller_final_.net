@@ -1,4 +1,6 @@
-﻿@model IEnumerable<taller_final_cruds.Models.Proveedore>
+﻿@using X.PagedList.Mvc.Core;
+
+@model X.PagedList.IPagedList<taller_final_cruds.Models.Proveedore>
 
 @{
     ViewData["Title"] = "Index";
@@ -45,7 +47,9 @@
                         Razón social
                     </th>
                     <th>
-                       Nombre comercial
+                    <a asp-action="Index" asp-route-filtrar="@ViewData["FiltroNombre"]">
+                        Nombre comercial
+                    </a>
                     </th>
                     <th>
                         Ciudad
@@ -144,5 +148,8 @@
                 }
             </tbody>
         </table>
+    <div class="pagination-container align-right">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, buscar = ViewData["Buscar"], filtro = ViewData["FiltroNombre"] }))
+    </div>
     </div>
 
