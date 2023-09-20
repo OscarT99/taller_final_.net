@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using taller_final_cruds.Models;
+using X.PagedList;
 
 namespace taller_final_cruds.Controllers
 {
@@ -13,18 +14,66 @@ namespace taller_final_cruds.Controllers
     {
         private readonly CrudCountechNetContext _context;
 
+
+
         public VentasController(CrudCountechNetContext context)
         {
             _context = context;
         }
 
+
+        public async Task<IActionResult> Index(string buscar, string filtrar, int? page)
+        {
+
+            var ventas = from Venta in _context.Ventas select Venta;
+            if (!String.IsNullOrEmpty(buscar))
+            {
+                if (int.TryParse(buscar, out int numeroBuscado))
+                {
+                    ventas = ventas.Where(venta => venta.Pedido == numeroBuscado);
+                }
+                
+            }
+            ViewData["FiltroFecha"] = filtrar == "FechaAscendente" ? "FechaDescendente" : "FechaAscendente";
+            switch(filtrar)
+            {
+
+                case "FechaDescendente":
+                    ventas = ventas.OrderByDescending(ventas => ventas.FechaVenta);
+                    break;
+                case "FechaAscendente":
+                    ventas = ventas.OrderBy(ventas => ventas.FechaVenta);
+                    break;
+                default:
+                    ventas = ventas.OrderByDescending(venta => venta.FechaVenta);
+                    break;
+            }
+
+
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            
+            var pageVentas = await ventas.ToPagedListAsync(pageNumber, pageSize);
+
+            ViewData["Buscar"] = buscar;
+            ViewData["Page"] = pageNumber;
+
+            return View(pageVentas);
+            //return View(await ventas.ToListAsync());
+        }
+
+
+
+        /*
         // GET: Ventas
         public async Task<IActionResult> Index()
         {
-              return _context.Ventas != null ? 
-                          View(await _context.Ventas.ToListAsync()) :
-                          Problem("Entity set 'CrudCountechNetContext.Ventas'  is null.");
+            return _context.Ventas != null ?
+                        View(await _context.Ventas.ToListAsync()) :
+                        Problem("Entity set 'CrudCountechNetContext.Ventas'  is null.");
         }
+        */
+
 
         // GET: Ventas/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -149,14 +198,14 @@ namespace taller_final_cruds.Controllers
             {
                 _context.Ventas.Remove(venta);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool VentaExists(int id)
         {
-          return (_context.Ventas?.Any(e => e.IdVenta == id)).GetValueOrDefault();
+            return (_context.Ventas?.Any(e => e.IdVenta == id)).GetValueOrDefault();
         }
     }
 }

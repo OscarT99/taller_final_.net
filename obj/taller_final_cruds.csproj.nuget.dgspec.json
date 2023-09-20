@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj": {}
+    "C:\\Users\\paula\\Documents\\developer\\5to_trimestre\\taller_final_.net1\\taller_final_cruds.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj": {
+    "C:\\Users\\paula\\Documents\\developer\\5to_trimestre\\taller_final_.net1\\taller_final_cruds.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj",
+        "projectUniqueName": "C:\\Users\\paula\\Documents\\developer\\5to_trimestre\\taller_final_.net1\\taller_final_cruds.csproj",
         "projectName": "taller_final_cruds",
-        "projectPath": "C:\\Users\\mapin\\Downloads\\taller_final_.net\\taller_final_cruds.csproj",
-        "packagesPath": "C:\\Users\\mapin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mapin\\Downloads\\taller_final_.net\\obj\\",
+        "projectPath": "C:\\Users\\paula\\Documents\\developer\\5to_trimestre\\taller_final_.net1\\taller_final_cruds.csproj",
+        "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paula\\Documents\\developer\\5to_trimestre\\taller_final_.net1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mapin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,6 +58,18 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.7, )"
+            },
+            "X.PagedList.Mvc": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.4.7, )"
             },
             "bootstrap": {
               "target": "Package",
